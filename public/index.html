@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="One Page Site with three Videos">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Mark Deuerling, Jörg Kandziroa und Evgenij Relin">
+
+<title>MME Uebung 1</title>
+
+<link rel="stylesheet" type="text/css" href="css/app.css" />
+<script data-main="js/appclient" src="js/require.js"></script>
+<!--<script type="text/javascript" src="js/app.js"></script>-->
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+        <h3>Mini Youtube</h3>
+    </div>
+
+  </header>
+  <div class="main">
+
+    <section id="content">
+
+      <script type="text/template" id="video-template">
+        <h3 class="video-header"><%= title %></h3>
+        <div class="control-box">
+          <video controls>
+            <source src=<%= src %> type=video/mp4>
+          </video>
+          <div class='controlElement'>
+            <input type="range" class="volume-bar" min="0" max="1" step="0.1" value="1">
+          </div>
+        </div>
+        <div class="info-bar">
+          <span>ranking: <%= ranking %></span> | <span class="playcount">playcount: <%= playcount %></span>
+        </div>
+      </script>
+
+    </section>
+  </div>
+
+
+<!--
+<article>
+<h2>Video 1</h2>
+<video id="firstvid"> 
+  <source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm'>
+</video>
+
+<br />
+<br />
+<h2>Video 2</h2>
+<video id="secvid"> 
+  <source src='http://techslides.com/demos/sample-videos/small.ogv' type='video/ogg'>
+</video>
+
+<br />
+<br />
+<h2>Video 3</h2>
+<video id="thirvid"> 
+  <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4'>
+</video>
+
+</article>
+
+
+<aside>
+<div id="aside-content">
+<h3>Buttons für alle Videos</h3>
+<button id="playall" type="button">Play All</button>
+<button id="pauseall" type="button">Pause All</button>
+<button id="stopall" type="button">Stop All</button>
+</div>
+</aside>
+-->
+
+
+<footer>
+Übung 6 von Gruppe 7 - Mark Deuerling, Jörg Kandziroa und Evgenij Relin.
+</footer>
+
+</div>
+</body>
+</html>
